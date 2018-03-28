@@ -39,5 +39,5 @@ resource "google_sql_user" "users" {
   project  = "${google_project.project.id}"
   name     = "db_user"
   instance = "${google_sql_database_instance.db_instance.name}"
-  password = "changeme"
+  password = "${var.db_password}"
 }

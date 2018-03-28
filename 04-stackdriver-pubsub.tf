@@ -36,8 +36,8 @@ resource "google_pubsub_subscription" "default" {
 
   ack_deadline_seconds = 20
 
-# GOTCHA: You need to prove ownership of any HTTP endpoints that you're pushing to.
-# This is a complex and somewhat manual processes.
+  # GOTCHA: You need to prove ownership of any HTTP endpoints that you're pushing to.
+  # This is a complex and somewhat manual processes.
   push_config {
     push_endpoint = "${var.sumologic_collector}"
   }

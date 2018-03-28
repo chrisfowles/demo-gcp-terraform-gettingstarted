@@ -2,9 +2,6 @@ provider "google" {
   region = "${var.region}"
 }
 
-
-
-
 provider "kubernetes" {
   host = "${google_container_cluster.primary.endpoint}"
 

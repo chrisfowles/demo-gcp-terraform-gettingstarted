@@ -2,7 +2,7 @@
 # Data source for a billing account
 # -------------------------------------
 data "google_billing_account" "acct" {
-  display_name = "My Billing Account"
+  display_name = "${var.billing_account_name}"
   open         = true
 }
 
@@ -10,7 +10,7 @@ data "google_billing_account" "acct" {
 # Data source for a billing account
 # -------------------------------------
 data "google_organization" "org" {
-  domain = "vibrato.tools"
+  domain = "${var.org_domain}"
 }
 
 # -------------------------------------
