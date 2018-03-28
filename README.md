@@ -1,4 +1,4 @@
-# Demo code for Terraform on GCP used at Hasicorp Meetup March 2018 - Sydney
+# Demo code for Terraform on GCP used at Hashicorp Meetup March 2018 - Sydney
 
 ## Warning: this is not production code - use at own risk
 
